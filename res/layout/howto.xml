@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_width="wrap_content" android:id="@+id/howtoTitle" android:text="How To Play" android:textSize="20px" android:layout_centerHorizontal="true" android:layout_marginTop="20px" android:layout_marginBottom="5px"></TextView>
+    <TextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/5" android:layout_below="@+id/howtoTitle" android:layout_centerHorizontal="true"></TextView>
+    <TextSwitcher android:id="@+id/switcher" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_margin="10px" android:layout_below="@+id/status"></TextSwitcher>
+    <Button android:layout_alignParentBottom="true" android:layout_height="wrap_content" android:id="@+id/next" android:layout_width="fill_parent" android:layout_margin="10px" android:text="Next"></Button>
+</RelativeLayout>

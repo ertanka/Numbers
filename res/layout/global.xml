@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:id="@+id/globalScoreTitle" android:text="Global Highscores" android:textSize="25px" android:layout_centerHorizontal="true" android:layout_marginTop="20px" android:layout_marginBottom="5px"></TextView>
+    <ScrollView android:layout_below="@+id/globalScoreTitle" android:layout_width="fill_parent" android:layout_marginLeft="5px" android:layout_marginRight="5px" android:id="@+id/globalScoreScroll" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/globalScrollContent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/globalScoreText" android:text="globalScoreText" android:layout_centerHorizontal="true" android:textSize="20px"></TextView>
+            <LinearLayout android:layout_below="@+id/globalScoreText" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/globalLineHolder" android:layout_width="fill_parent">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/globalNameLine">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/globalNameText" android:text="Name : (*) "></TextView>
+                    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/globalNameBox" android:inputType="text"></EditText>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/globalCommentBar">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/globalCommentText" android:text="Comment: "></TextView>
+                    <EditText android:layout_height="wrap_content" android:id="@+id/globalCommentBox" android:layout_width="fill_parent" android:inputType="text"></EditText>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/globalAdditionalLines">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="(*) Required" android:id="@+id/globalNameLine"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_margin="5px" android:id="@+id/globalButtonHolder" android:layout_width="fill_parent" android:layout_alignParentBottom="true">
+        <Button android:text="Send" android:layout_height="wrap_content" android:layout_weight="0.5" android:id="@+id/sendGlobalButton" android:layout_width="wrap_content" android:onClick="send"></Button>
+        <Button android:text="Cancel" android:layout_height="wrap_content" android:layout_weight="0.5" android:id="@+id/globalCancelButton" android:layout_width="wrap_content" android:onClick="cancel"></Button>
+    </LinearLayout>
+</RelativeLayout>

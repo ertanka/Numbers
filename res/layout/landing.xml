@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:layout_alignParentTop="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/title" android:text="Numbers" android:textSize="20px" android:layout_centerHorizontal="true" android:layout_margin="20px"></TextView>
+    <Button android:layout_width="fill_parent" android:id="@+id/start" android:layout_height="wrap_content" android:text="Start Game" android:layout_below="@+id/title" android:layout_marginLeft="20px" android:layout_marginRight="20px" android:layout_marginBottom="20px" android:onClick="startGame"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/start" android:layout_alignLeft="@+id/start" android:layout_alignRight="@+id/start" android:id="@+id/setting" android:text="Settings" android:onClick="settings"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/setting" android:layout_alignLeft="@+id/setting" android:layout_alignRight="@+id/setting" android:layout_marginBottom="20px" android:layout_marginTop="20px" android:text="Hi-Scores" android:onClick="showScores" android:id="@+id/scoreButt"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/scoreButt" android:layout_alignLeft="@+id/scoreButt" android:layout_alignRight="@+id/scoreButt" android:id="@+id/howtoBtt" android:text="How to Play" android:onClick="showHowto"></Button>
+</RelativeLayout>
